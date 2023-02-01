@@ -1,0 +1,10 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#books{
+    width: 300px;
+    margin: auto;
+}
+img{
+    width: 300px;
+}

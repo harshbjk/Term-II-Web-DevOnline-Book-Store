@@ -1,0 +1,19 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #EAEFF2;
+    background: #EAEFF2;
+}
+
+#container{
+    margin: auto;
+    width: 95%;
+}
+#contents{
+    padding: 20px;
+    border-radius:5px;
+    background: #3298c8;
+}
+#imgg{
+    margin: auto;
+    width: 85%;
+}

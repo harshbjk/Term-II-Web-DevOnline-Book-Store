@@ -1,0 +1,38 @@
+.Book1{
+    padding: 0;
+    text-align: center;
+    border-radius: 5px;
+    background: rgba(27, 71, 92, 0.5);
+    width: 200px;
+    margin: 15px;
+    height: 360px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.imgg{
+    border: 0;
+    border-radius: 5px;
+    widht: 250px;
+    height: 280px;
+    object-fit: cover;
+}
+body{
+    background: #3bafea;
+}
+#whole{
+    border-radius: 5px;
+    background:  #3298c8;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+p{
+    color: #0D8BBD;
+}
+a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #0D8BBD;
+}

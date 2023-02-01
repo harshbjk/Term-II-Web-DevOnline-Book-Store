@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="JS/jquery-3.6.0.js"></script>
+    <script src="JS/jquery-validation-1.19.3%20(2)/dist/jquery.validate.js"></script>
+    <script src="JS/smartmenus-master/dist/jquery.smartmenus.js"></script>
+    <script src="JS/Register.js"></script>
+    <link rel="stylesheet" href="Register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Register</title>
+</head>
+<body>
+    <form class="RegForm" id="RegisterationForm" method="get" action="">
+        <fieldset>
+            <legend>Please enter your Personal Informations</legend>
+            <p>
+                <label for="firstname">Firstname</label>
+                <input id="firstname" name="firstname" type="text">
+            </p>
+            <hr>
+            <p>
+                <label for="lastname">Lastname</label>
+                <input id="lastname" name="lastname" type="text">
+            </p>
+            <hr>
+            <p>
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+            </p>
+            <hr>
+            <p>
+                <label for="password1">Password</label>
+                <input id="password1" name="password1" type="password">
+            </p>
+            <hr>
+            <p>
+                <label for="confirm_password">Confirm Password</label>
+                <input id="confirm_password" name="confirm_password" type="password">
+            </p>
+            <hr>
+            <p>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email">
+            </p>
+        </fieldset>
+        <p>
+            <input class="submit_button" type="submit" value="Submit" formaction="Home.html">
+        </p>
+        <p>
+            <label class="checkbox" for="agree">Agree to our policy</label>
+            <input type="checkbox" class="checkbox" id="agree" name="agree">
+        </p>
+    </form>
+</body>
+</html>

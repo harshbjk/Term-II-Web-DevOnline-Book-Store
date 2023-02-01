@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="All%20products.css">
+    <script src="JS/smartmenus-master/dist/jquery.smartmenus.js"></script>
+    <script src="JS/jquery-3.6.0.js"></script>
+    <script src="JS/aos-master/dist/aos.js"></script>
+    <link rel="stylesheet" href="JS/aos-master/dist/aos.css">
+    <link href="JS/smartmenus-master/dist/css/sm-core-css.css" rel='stylesheet' type='text/css' >
+    <link href="JS/smartmenus-master/dist/css/sm-blue/sm-blue.css" rel='stylesheet' type='text/css' >
+    <script>
+
+        $(document).ready(function() {
+            AOS.init({});
+            $(".imgg").hover(
+                function(){
+                    $(this).filter(':not(:animated)').animate({
+                        width:'250px'
+                    },'slow');},
+                function() {
+                    $(this).animate({
+                        width:'200px'
+                    },'slow');
+
+                });
+            $('.Book1').hover(
+                function(){
+                    $(this).filter(':not(:animated)').animate({
+                        width:'250px'
+                    },'slow');},
+                function() {
+                    $(this).animate({
+                        width:'200px'
+                    },'slow');
+
+                });
+            $('#main-menu').smartmenus();
+        });
+    </script>
+    <title>Title</title>
+</head>
+<body>
+    <ul id="main-menu" class="sm sm-blue">
+        <li><a href="#"><img src="Imgs/41dc06f89155e275186cf58b8bdd211b.png" width="30px" ></a></li>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Allproducts.html">Shop</a>
+            <ul>
+                <li><a href="Allproducts.html">Action</a></li>
+                <li><a href="Allproducts.html">Adventure</a></li>
+                <li><a href="Allproducts.html">Comedy</a></li>
+            </ul>
+        </li>
+        <li><a href="About_us.html">About Us</a></li>
+        <li><a href="index.html">Cart</a> </li>
+        <li id="cart"></li>
+    </ul>
+    <div id="whole">
+        <div data-aos="fade-up" data-aos-anchor=".other-element" class="Book1">
+            <img src="Imgs/Books/aiwl.jpg" class="imgg">
+            <a href="products.html">Alice in Wonderland</a>
+            <p>Price:$12.99</p>
+        </div>
+        <div data-aos="fade-down" data-aos-anchor=".other-element" class="Book1">
+            <img src="Imgs/Books/The_Great_Gatsby_Cover_1925_Retouched.jpg" class="imgg">
+            <a href="products.html">The Great Gatsby</a>
+            <p>Price:$12.99</p>
+        </div>
+        <div data-aos="fade-up" data-aos-anchor=".other-element" class="Book1">
+            <img src="Imgs/Books/To_Kill_a_Mockingbird_(first_edition_cover).jpg" class="imgg">
+            <a href="products.html">To Kill a Mockingbird</a>
+            <p>Price:$12.99</p>
+        </div>
+        <div data-aos="fade-up" data-aos-anchor=".other-element" class="Book1">
+            <img src="Imgs/Books/1984.jpg" class="imgg">
+            <a href="products.html">Nineteen Eighty-Four</a>
+            <p>Price:$12.99</p>
+        </div>
+        <div data-aos="fade-up" data-aos-anchor=".other-element" class="Book1">
+            <img src="Imgs/Books/the%20catcher%20in%20the.jpg" class="imgg">
+            <a href="products.html">The Catcher in the Rye</a>
+            <p>Price:$12.99</p>
+        </div><div data-aos="fade-up" data-aos-anchor=".other-element" class="Book1">
+        <img src="Imgs/Books/Lolita_1955.jpg" class="imgg">
+        <a href="products.html">Lolita</a>
+        <p>Price:$12.99</p>
+    </div>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Shipping</h1>
+        <p>Please enter your shipping details.</p>
+        <hr />
+        <div class="form">
+        
+          
+        <div class="fields fields--2">
+          <label class="field">
+            <span class="field__label" for="firstname">First name</span>
+            <input class="field__input" type="text" id="firstname" value="John" />
+          </label>
+          <label class="field">
+            <span class="field__label" for="lastname">Last name</span>
+            <input class="field__input" type="text" id="lastname" value="Doe" />
+          </label>
+        </div>
+        <label class="field">
+          <span class="field__label" for="address">Address</span>
+          <input class="field__input" type="text" id="address" />
+        </label>
+        <label class="field">
+          <span class="field__label" for="address">Country</span>
+          <select id="rooms" name="rooms">
+            <option value="S308">UNITED STATES</option>
+            <option value="S306">CANADA</option>
+
+    </select>
+          
+        </label>
+        <div class="fields fields--3">
+          <label class="field">
+            <span class="field__label" for="zipcode">Zip code</span>
+            <input class="field__input" type="text" id="zipcode" />
+          </label>
+          <label class="field">
+            <span class="field__label" for="city">City</span>
+            <input class="field__input" type="text" id="city" />
+          </label>
+          <label class="field">
+            <span class="field__label" for="state">State</span>
+            <input class="field__input" type="text" id="address" />
+          </label>
+          
+        </div>
+
+        
+
+
+
+
+
+
+
+        <div class="field">
+            <input type="text"  required>
+            <span class="field__label" for="zipcode">Enter your full name</span>
+        </div>
+        <div class="field">
+        <input type="email" placeholder="Enter your email:" required>
+        </div>
+        <h3>Format: name@email.com</h3>
+        <div class="field">
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter your telephone number:" required>
+        </div>
+        <h3>Format: 123-456-7890</h3>
+        <div class="field">
+        <label for="rooms">Choose a your preferred means:</label>
+        <select id="rooms" name="rooms">
+                <option value="S308">United Percel services</option>
+                <option value="S306">FedEx</option>
+                <option value="L2">DHL</option>
+                <option value="ME201">TNT</option>
+        </select>
+        
+        </div>
+        
+        <div class="field">
+            <label for="rooms">Choose prefered arrival date:</label>
+            <input type="date" required>
+            
+        </div>
+        
+
+        <div class="field">
+        <label for="rooms">Choose the minimum number of days you expext the shipment to arrive:</label>
+        <select id="rooms" name="rooms">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">Am not very specific</option>
+        </select>
+        </div>
+        <div class="field"></div>
+        <label>Is your delivery outside the United States</label>
+        <div class="radio">
+        <input type="radio" name="title" value="yes">
+        <label>Yes it is </label>
+        </div>
+        <div class="radio">
+        <input type="radio" name="title" value="yes">
+        <label>No it is not</label>
+        </div>
+
+        
+
+        <div class="textarea">
+        <textarea maxlength="500" placeholder="Give brief description of any specifications you might have."></textarea>
+        </div>
+        <p>Please submit this form and we will email you with the details of the shipment.</p>
+        
+
+
+
+
+
+
+        
+
+        
+
+
+
+
+
+
+
+        </div>
+        <hr>
+        <button class="button">Continue</button>
+      </div>
+</body>
+</html>

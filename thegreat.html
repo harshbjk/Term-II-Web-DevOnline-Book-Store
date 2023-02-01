@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="JS/jquery-ui-1.13.1.custom/jquery-ui.css">
+    <style>
+        body{
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        #books{
+            width: 300px;
+            margin: auto;
+        }
+        img{
+            width: 200px;
+        }
+    </style>
+    <script src="JS/jquery-3.6.0.js"></script>
+    <script src="JS/jquery-ui-1.13.1.custom/jquery-ui.js"></script>
+    <script src="JS/Products.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script>
+        $(document).ready(function() {
+            console.log("Ready") ;
+            $( "#accordion" ).accordion();
+        });
+    </script>
+    <title>Products</title>
+</head>
+<body>
+    <div id="books">
+        <img src="Imgs/Books/aiwl.jpg">
+        <h2>The Great Gatsby</h2>
+        Price: $12.99
+    </div>
+    <div id="accordion">
+        <h3>About Book</h3>
+        <div>
+            <p>Alice's Adventures in Wonderland (commonly Alice in Wonderland) is an 1865 English children's novel by
+                Lewis Carroll. A young girl named Alice falls through a rabbit hole into a fantasy world of anthropomorp
+                hic creatures. It is seen as an example of the literary nonsense genre.</p>
+        </div>
+        <h3>About Author</h3>
+        <div>
+            <p>Lewis Carroll was an English novelist and poet. He is best known as the author of the children's book
+                Alice's Adventures in Wonderland (1865) and its sequel Through the Looking-Glass (1871)—two of the
+                most popular works of fiction in the English language.</p>
+        </div>
+        <h3>Books</h3>
+        <div>
+            <p>Other Famous Books from the author</p>
+            <ul>
+                <li>Through the Looking-Glass</li>
+                <li>Jabberwocky</li>
+                <li>The Hunting of the Snark</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="JS/jquery-ui-1.13.1.custom/jquery-ui.css">
+    <style>
+        body{
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        #books{
+            width: 300px;
+            margin: auto;
+        }
+        #bookcover{
+            width: 200px;
+        }
+        #cart{
+            color: red;
+        }
+        .input-box{
+            height: 40px;
+            width: 100px;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        button{
+            background: #1da4e2;
+            border: 0;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 15px;
+            padding: 5px 10px;
+        }
+
+    </style>
+    <script src="JS/jquery-3.6.0.js"></script>
+    <script src="JS/jquery-ui-1.13.1.custom/jquery-ui.js"></script>
+    <script src="JS/Products.js"></script>
+    <link href="JS/smartmenus-master/dist/css/sm-core-css.css" rel='stylesheet' type='text/css' >
+    <link href="JS/smartmenus-master/dist/css/sm-blue/sm-blue.css" rel='stylesheet' type='text/css' >
+    <script src="JS/smartmenus-master/dist/jquery.smartmenus.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script>
+        var counter = 0;
+
+        function plus() {
+            counter += 1;
+            document.getElementById("cart").innerHTML = counter;
+        }
+
+        function minus() {
+            if(counter > 0){
+                counter -= 1;
+            }
+            document.getElementById("cart").innerHTML = counter;
+        }
+        $(document).ready(function() {
+            console.log("Ready") ;
+            $( "#accordion" ).accordion();
+            $('#main-menu').smartmenus();
+        });
+    </script>
+    <title>Products</title>
+</head>
+<body>
+    <ul id="main-menu" class="sm sm-blue">
+    <li><a href="#"><img src="Imgs/41dc06f89155e275186cf58b8bdd211b.png" width="30px" ></a></li>
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="Allproducts.html">Shop</a>
+        <ul>
+            <li><a href="Allproducts.html">Action</a></li>
+            <li><a href="Allproducts.html">Adventure</a></li>
+            <li><a href="Allproducts.html">Comedy</a></li>
+        </ul>
+    </li>
+    <li><a href="About_us.html">About Us</a></li>
+        <li><a href="index.html">Cart</a> </li>
+        <li id="cart"></li>
+    </ul>
+    <div id="books">
+        <img src="Imgs/Books/aiwl.jpg" id="bookcover">
+        <h2>Alice In Wonderland</h2>
+        Price: $12.99
+        <button type="button" onclick="minus()" style="font-size: 20px;">-</button>
+        <button type="button" onclick="plus()">+</button>
+    </div>
+    <div id="accordion">
+        <h3>About Book</h3>
+        <div>
+            <p>Alice's Adventures in Wonderland (commonly Alice in Wonderland) is an 1865 English children's novel by
+                Lewis Carroll. A young girl named Alice falls through a rabbit hole into a fantasy world of anthropomorp
+                hic creatures. It is seen as an example of the literary nonsense genre.</p>
+        </div>
+        <h3>About Author</h3>
+        <div>
+            <p>Lewis Carroll was an English novelist and poet. He is best known as the author of the children's book
+                Alice's Adventures in Wonderland (1865) and its sequel Through the Looking-Glass (1871)—two of the
+                most popular works of fiction in the English language.</p>
+        </div>
+        <h3>Books</h3>
+        <div>
+            <p>Other Famous Books from the author</p>
+            <ul>
+                <li>Through the Looking-Glass</li>
+                <li>Jabberwocky</li>
+                <li>The Hunting of the Snark</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

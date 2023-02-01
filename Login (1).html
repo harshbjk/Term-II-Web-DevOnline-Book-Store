@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title>Login page</title>
+    <script src="JS/jquery-3.6.0.js"></script>
+    <script src="JS/jquery-validation-1.19.3%20(2)/dist/jquery.validate.js"></script>
+    <script>
+        $(document).ready(function() {
+            console.log('Page is ready with JQuery');
+
+            $("#RegisterationForm").validate({
+                rules:{
+                    user_name: {
+                        required: true,
+                        minlength: 3
+                    },
+                    email:{
+                        required: true
+                    },
+                    password:{
+                        equalTo: '#email'
+                    }
+                }
+            });
+            let username1 = document.getElementById('user_name').value;
+            document.cookie = username1;
+            console.log(username1)
+        });
+
+    </script>
+    <style>
+        body {background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeXR_03qud5f5XFqxuKAXaLacJZ1CPxioQPw&usqp=CAU');
+           }
+        span{
+            color:red;
+        }
+        #user_name{
+            margin-left:145px;
+        }
+        #email{
+            margin-left:158px;
+        }
+        #password{
+            margin-left:151px;
+        }
+       
+        form{
+            background-color: rgb(250, 244, 226);
+            border:10px solid black;
+            margin-right:100px;
+            margin-left:400px;
+            padding-left:60px;
+            padding-top:50px;
+            padding-bottom:30px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #btn{
+            padding-left:210px;
+            padding-right:210px;
+            padding-top:15px;
+            padding-bottom:15px;
+            background-color:rgb(15, 31, 104);
+        }
+        #img{ 
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+
+    <form class="RegForm" id="RegisterationForm" method="get" action="">
+        <h1>Login Here!!</h1>
+        <b>Please Enter your information here to login into your account</b><br /><br />
+        <p>
+            <label for="user_name">User Name</label>
+            <input type="text" id="user_name" name="user_name" >
+        </p>
+
+        <p>
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" >
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" >
+        </p>
+
+        Not a user? <a href="Register.html">Register.</a><br /><br >
+        <p>
+            <input class="submit_button" type="submit" value="Submit" formaction="Home.html">
+        </p>
+        
+    </form>
+    <img src=
+        "https://www.ellsworthcheese.com/wp-content/uploads/2017/06/Shop-n-Save-Logo-vector-image-705x470.png"
+      align="middle">
+</body>
+</html>
+
+
+    
+
+
+       
